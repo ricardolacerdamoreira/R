@@ -72,3 +72,15 @@ ggplot Chart
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+Using Filter
+
+``` r
+  ggplot(data = mpg,mapping= aes(x = displ,y = hwy)) +  
+  geom_point(mapping = aes(color=class)) + 
+  geom_smooth(data=filter(mpg,class=="subcompact"),se=FALSE)
+```
+
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
