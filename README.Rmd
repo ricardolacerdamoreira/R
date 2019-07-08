@@ -1,5 +1,5 @@
 ---
-title: "Histogram Chart"
+title: "Examples in R"
 author: Ricardo Lacerda
 date: 2019-07-07
 output: github_document
@@ -30,6 +30,17 @@ df %>%
   labs(y="percentage")
 ```
 
+Loading libraries
 
+```{r,message=F}
+library(tidyverse)
+library(tidyverse)
+```
 
+Creating a ggplot
 
+```{r}
+
+  ggplot(data = mpg) +  
+  geom_point(mapping= aes(x = displ,y = hwy))
+```

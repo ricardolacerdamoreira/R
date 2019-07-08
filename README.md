@@ -1,4 +1,4 @@
-Histogram Chart
+Examples in R
 ================
 Ricardo Lacerda
 2019-07-07
@@ -29,3 +29,19 @@ df %>%
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+Loading libraries
+
+``` r
+library(tidyverse)
+library(tidyverse)
+```
+
+Creating a ggplot
+
+``` r
+  ggplot(data = mpg) +  
+  geom_point(mapping= aes(x = displ,y = hwy))
+```
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
