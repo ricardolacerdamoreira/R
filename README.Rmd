@@ -39,6 +39,19 @@ library(tidyverse)
 
 Creating a ggplot
 
+Source: 
+
+displ - A car's engine size, in liters.
+
+hwy - A car's fuel efficient on the highway.
+
+```{r}
+mpg
+
+```
+
+ggplot Chart 
+
 ```{r}
 
   ggplot(data = mpg) +  
